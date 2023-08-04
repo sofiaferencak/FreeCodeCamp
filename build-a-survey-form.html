@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Survey Form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content= "width=device-width, initial-scale=1.0">
+  <link rel=stylesheet href="styles.css">
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Thank you for taking the time to respond this survey</p>
+  <form id="survey-form">
+    
+    <label for="name" id="name-label">Name <input id="name" name="name" type="text" required placeholder="name"/></label>
+    <label for="email" id="email-label">Email <input id="email" name="email" type="email" required placeholder="email"/></label>
+    <label for="number" id="number-label">Age (optional)<input id="number" type="number" min="15" max="120" placeholder="number"/></label>
+    
+
+    <label for="dropdown">Which option best describes your current role?
+      <select id="dropdown">
+        <option value="">(select one)</option>
+        <option value="1">Student</option>
+        <option value="1">Full-time Job</option>
+      </select>
+    </label>
+    <label>Please select one:  
+    </label>
+    <label for="yes"><input id="yes"type="radio" name="like" class="inline" value="yes"/>I like FreeCodeCamp</lavel>
+    <label for="no"><input id="no" type="radio" name="like" class="inline" value=" no"/>I don't like FreeCodeCamp</label>
+
+    <label>What do you like most of FreeCodeCamp?
+    </label>
+    <label>
+      <input id="videos" type="checkbox" class="inline" value="videos"/>Videos
+      <input id="examples" type="checkbox" class="inline" value="examples"/>Examples
+      <input id="meetups" type="checkbox" class="inline" value="meetups"/>Meetups
+    </label>
+
+    <label for="bio">Provide a bio:
+      <textarea id="bio" name="bio" rows="3" cols="30" ></textarea>
+    </label>
+
+    <input id="submit" type="submit" value="Submit" />
+
+  </form>
+</body>
+</html>
+
+
